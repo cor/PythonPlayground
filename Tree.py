@@ -2,8 +2,10 @@ import sys
 
 tree_width = 25
 
-if len(sys.argv) == 2:
+if len(sys.argv) is 2:
 	tree_width = int(sys.argv[1])
+	if tree_width % 2 == 0:
+		tree_width = 25
 
 def print_tree(size):
 	# Get the string for every line of the tree	
